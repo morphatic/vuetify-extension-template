@@ -17,8 +17,6 @@
     "types/"
   ],
   "keywords": [
-    "stripe",
-    "elements",
     "vuetify",
     "vue"
   ],
