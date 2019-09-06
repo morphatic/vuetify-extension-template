@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import App from './App'
 import Vuetify from 'vuetify'
-import YOUR_COMPONENT from '../src'
+import YourPackageName from '../src'
 
 Vue.config.productionTip = false
 
 Vue.use(Vuetify)
 
-Vue.use(YOUR_COMPONENT)
+Vue.use(YourPackageName)
 
 const vuetify = new Vuetify({
   theme: {
