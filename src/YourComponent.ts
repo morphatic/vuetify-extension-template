@@ -53,7 +53,7 @@ interface options extends InstanceType<typeof base> {
   $vuetify: any // VuetifyObject // importing this type from Vuetify causes errors for some reason
 }
 
-// Extend VTextField to define the VStripeCard component
+// Extend VTextField to define the YourComponent component
 export default base.extend<options>().extend({
   name: 'your-component',
   props: {
