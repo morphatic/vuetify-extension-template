@@ -11,9 +11,9 @@ const vuetifyMocks = {
         error: '#ff0000',
       },
       dark: false,
-      lang: {
-        t: (val: string) => val,
-      },
+    },
+    lang: {
+      t: (val: string) => val,
     },
   },
 }
@@ -68,9 +68,10 @@ describe('YourComponent', () => {
         expect(html).toMatchSnapshot()
       })
         
-      it('should have an property called `foo`', () => {
+      it('should have a property called `foo`', () => {
         const wrapper = mountFunction({ propsData: { foo }, })
-        expect(wrapper.attributes()).toBeDefined()
+        expect(wrapper.vm.foo).toBeDefined()
+        expect(wrapper.vm.foo).toBe('bar')
       })
     })
   
